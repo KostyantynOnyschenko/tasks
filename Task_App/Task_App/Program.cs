@@ -11,23 +11,26 @@ namespace Task_App
         static void Main(string[] args)
         {
             Eight();
-            //Ten();
+            Ten();
         }
 
         public static void Eight()
         {
+            Console.WriteLine("task number eight: ");
             for (int i = 1; i < 21; i++)
             {
-                Console.WriteLine(i);
+                Console.Write(i + " ");
             }
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         public static void Ten()
         {
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine();
+            Console.WriteLine("task number ten: ");
+            for (int i = 100; i > 0; i-=4)
             {
-                Console.WriteLine(i);
+                Console.Write(i + " ");
             }
             Console.ReadLine();
         }
