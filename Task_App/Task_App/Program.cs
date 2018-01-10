@@ -72,14 +72,22 @@ namespace Task_App
             //Random rnd = new Random();
             //rnd.Next(100);
             //Console.Write(rnd);
-            int[] numbers = new int[100];
-            Random rnd = new Random();
-            for (int i = 0; i < numbers.Length; i++)
+            //int[] numbers = new int[100];
+            //Random rnd = new Random();
+            Random rng = new Random();
+            for (int i = 0; i < 101; i++)
             {
-                numbers[i] = rnd.Next(0, 100);
-                Console.Write(i + " ");
+                Console.Write(GenerateDigital(rng) + " ");
             }
             Console.ReadLine();
+        }
+
+        static int GenerateDigital(Random rng)
+        {
+            //Random rnd = new Random();
+            return rng.Next(10);
+            //return rnd;
+
         }
         
     }
