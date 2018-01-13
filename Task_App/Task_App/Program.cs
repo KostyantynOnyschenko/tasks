@@ -43,6 +43,21 @@ namespace Task_App
             Console.ReadKey();
         }
 
+        public static void Four()
+        {
+            Console.WriteLine("task number 4: ");
+            Console.WriteLine("введите первое число: ");
+            int one = int.Parse(Console.ReadLine());
+            Console.WriteLine("введите второе число: ");
+            int two = int.Parse(Console.ReadLine());
+            Console.WriteLine("введите третье число: ");
+            int three = int.Parse(Console.ReadLine());
+            Console.WriteLine("введите четвертое число: ");
+            int four = int.Parse(Console.ReadLine());
+
+            Console.ReadKey();
+        }
+
         public static void Five()
         {
             Console.WriteLine();
@@ -58,6 +73,13 @@ namespace Task_App
             {
                 Console.WriteLine("yes");
             }
+        }
+
+        public static void Seven()
+        {
+            Console.WriteLine("task number 7: ");
+            int number;
+
         }
 
         public static void Eight()
