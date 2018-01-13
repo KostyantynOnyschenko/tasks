@@ -69,26 +69,29 @@ namespace Task_App
         {
             Console.WriteLine();
             Console.WriteLine("task number 11: ");
-            //Random rnd = new Random();
-            //rnd.Next(100);
-            //Console.Write(rnd);
-            //int[] numbers = new int[100];
-            //Random rnd = new Random();
-            Random rng = new Random();
-            for (int i = 0; i < 101; i++)
+            Random rnd = new Random();
+            HashSet<int> somenumb = new HashSet<int>();
+            int[] arr = new int[3];
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write(GenerateDigital(rng) + " ");
+                int num;
+                do
+                {
+                    num = rnd.Next(100);
+                } while (!somenumb.Add(num));
+                arr[i] = num;
+                Console.Write(arr[i] + " ");
             }
+            /*int[] a = new int[3];
+            for (int i = 0; i < 3; i++)
+            {
+                Random rnd = new Random();
+                a[i] = rnd.Next(1, 100);
+                Console.Write(a[i] + " ");
+            }*/
             Console.ReadLine();
         }
-
-        static int GenerateDigital(Random rng)
-        {
-            //Random rnd = new Random();
-            return rng.Next(10);
-            //return rnd;
-
-        }
+        
         
     }
 }
