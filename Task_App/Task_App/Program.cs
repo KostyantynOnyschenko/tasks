@@ -10,11 +10,37 @@ namespace Task_App
     {
         static void Main(string[] args)
         {
+            First();
             Five();
             Eight();
             Nine();
             Ten();
             Eleven();
+        }
+
+        public static void First()
+        {
+            Console.WriteLine("task number 1: ");
+            bool simple = true;
+            Console.WriteLine("enter the numer:\n");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n/n; i++)
+            {
+                if (n % i == 0)
+                {
+                    simple = false;
+                    break;
+                }
+            }
+            if (simple)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+            Console.ReadKey();
         }
 
         public static void Five()
