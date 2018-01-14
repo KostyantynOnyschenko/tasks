@@ -11,6 +11,7 @@ namespace Task_App
         static void Main(string[] args)
         {
             First();
+            Two();
             Five();
             Eight();
             Nine();
@@ -41,6 +42,33 @@ namespace Task_App
                 Console.WriteLine("false");
             }
             Console.ReadKey();
+        }
+
+        public static void Two()
+        {
+            Console.WriteLine("task number two: ");
+            HashSet<int> somenumbers = new HashSet<int>();
+            Random rnd = new Random();
+            int[] arr = new int[3];
+            int min, max;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int digital;
+                do
+                {
+                    digital = rnd.Next(1, 100);
+
+                } while (!somenumbers.Add(digital));
+                arr[i] = digital;
+                Console.Write("three digital is:\n " + arr[i]);
+                Console.Write(arr[i] + " ");
+                min = max = arr[i];
+                if (arr[i] > min)
+                    max = arr[i];
+                if (arr[i] < max)
+                    min = arr[i];
+                Console.WriteLine("min digital: " + min + "\nmax digital: " + max);
+            }
         }
 
         public static void Four()
