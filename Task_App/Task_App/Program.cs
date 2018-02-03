@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,7 @@ namespace Task_App
         {
             First();
             Two();
+            Three();
             Five();
             Eight();
             Nine();
@@ -47,10 +49,34 @@ namespace Task_App
         public static void Two()
         {
             Console.WriteLine("task number two: ");
+            int a, b, c;
+            a = 78;
+            b = 56;
+            c = 89;
+            Console.WriteLine("three digital: " + a + " " + b + " " + c);
+            if (a > b || a > c)
+            {
+                Console.WriteLine("max: " +  a);
+            }
+            else if (b > a || b > c)
+            {
+                Console.WriteLine("max: " + b);
+            }
+            else if (c > a || c > b)
+            {
+                Console.WriteLine("max: " + c);
+            }
+            
+        }
+
+        public static void TwoTwo()
+        {
+            Console.WriteLine("task number two: ");
             HashSet<int> somenumbers = new HashSet<int>();
             Random rnd = new Random();
             int[] arr = new int[3];
             int min, max;
+            min = max = arr[0];
             for (int i = 0; i < arr.Length; i++)
             {
                 int digital;
@@ -60,14 +86,40 @@ namespace Task_App
 
                 } while (!somenumbers.Add(digital));
                 arr[i] = digital;
-                Console.Write("three digital is:\n " + arr[i]);
+                Console.WriteLine("three digital:\n ");
                 Console.Write(arr[i] + " ");
-                min = max = arr[i];
-                if (arr[i] > min)
-                    max = arr[i];
-                if (arr[i] < max)
+                Console.Write(arr[i] + " ");
+                //min = max = arr[i];
+                /*if (arr[i] < max)
                     min = arr[i];
-                Console.WriteLine("min digital: " + min + "\nmax digital: " + max);
+                if (arr[i] > min)
+                    max = arr[i];*/
+                if (digital > min)
+                    max = digital;
+                Console.WriteLine("max: " + max);
+
+            }
+        }
+
+        public static void Three()
+        {
+            Console.WriteLine("task number three: ");
+            int a = 3;
+            int b = 4;
+            int c = 2;
+            int y, z, w;
+            y = a + b;
+            z = b + c;
+            w = a + c;
+
+            Console.WriteLine();
+            if (y > z)
+            {
+                Console.WriteLine("big sum: a + b: " + y);
+            }
+            else
+            {
+                Console.WriteLine("big sum: a + c:" + w);
             }
         }
 
