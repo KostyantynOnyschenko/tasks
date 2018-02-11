@@ -16,6 +16,7 @@ namespace Task_App
             Three();
             Five();
             Seven();
+            Seven_VersionTwo();
             Eight();
             Nine();
             Ten();
@@ -217,6 +218,47 @@ namespace Task_App
                 Console.WriteLine("number " + number + " don't have sample");
             }
 
+        }
+
+        public static void Seven_VersionTwo()
+        {
+            Console.WriteLine("task number 7 (version solution 2): ");
+            int number;
+            number = 3425;
+            Console.WriteLine("number " + number);
+            int a, b, c, d;
+            a = 3;
+            b = 4;
+            c = 2;
+            d = 5;
+            if (a == b)
+            {
+                Console.WriteLine("a equal b");
+                if (c == d)
+                {
+                    Console.WriteLine("c equal d");
+                    if (a == c)
+                    {
+                        Console.WriteLine("a equal c");
+                        if (b == d)
+                        {
+                            Console.WriteLine("b equal d");
+                            if (a == d)
+                            {
+                                Console.WriteLine("a equal d");
+                                if (b == c)
+                                {
+                                    Console.WriteLine("b equal c");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("number " + number + " don't have sample nums");
+            }
         }
 
         public static void Eight()
