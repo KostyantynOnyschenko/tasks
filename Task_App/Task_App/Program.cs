@@ -15,6 +15,7 @@ namespace Task_App
             Two();
             Three();
             Five();
+            Seven();
             Eight();
             Nine();
             Ten();
@@ -159,6 +160,62 @@ namespace Task_App
         {
             Console.WriteLine("task number 7: ");
             int number;
+            number = 3569;
+            Console.WriteLine("number: " + number);
+            int a, b, c, d;
+            a = 3;
+            b = 5;
+            c = 6;
+            d = 9;
+            if (a == b)
+            {
+                Console.WriteLine("a equal b");
+            }
+            else
+            {
+                Console.WriteLine("a not equal b");
+            }
+            if (c == d)
+            {
+                Console.WriteLine("c equal b");
+            }
+            else
+            {
+                Console.WriteLine("c not equal d");
+            }
+            if (a == c)
+            {
+                Console.WriteLine("a equal c");
+            }
+            else
+            {
+                Console.WriteLine("a not equal c");
+            }
+            if (b == d)
+            {
+                Console.WriteLine("b equal d");
+            }
+            else
+            {
+                Console.WriteLine("b not equal d");
+            }
+            if (a == d)
+            {
+                Console.WriteLine("a equal d");
+            }
+            else
+            {
+                Console.WriteLine("a not equal d");
+            }
+            if (b == c)
+            {
+                Console.WriteLine("b equal c");
+            }
+            else
+            {
+                Console.WriteLine("b not equal c");
+                Console.WriteLine("number " + number + " don't have sample");
+            }
 
         }
 
