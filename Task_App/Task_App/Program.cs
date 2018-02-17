@@ -92,11 +92,6 @@ namespace Task_App
                 Console.WriteLine("three digital:\n ");
                 Console.Write(arr[i] + " ");
                 Console.Write(arr[i] + " ");
-                //min = max = arr[i];
-                /*if (arr[i] < max)
-                    min = arr[i];
-                if (arr[i] > min)
-                    max = arr[i];*/
                 if (digital > min)
                     max = digital;
                 Console.WriteLine("max: " + max);
@@ -316,7 +311,6 @@ namespace Task_App
             {
                 Console.Write(i + " ");
             }
-            //Console.ReadLine();
         }
 
         public static void Nine()
@@ -337,7 +331,6 @@ namespace Task_App
             {
                 Console.Write(i + " ");
             }
-            //Console.ReadLine();
         }
 
         public static void Eleven()
@@ -357,13 +350,6 @@ namespace Task_App
                 arr[i] = num;
                 Console.Write(arr[i] + " ");
             }
-            /*int[] a = new int[3];
-            for (int i = 0; i < 3; i++)
-            {
-                Random rnd = new Random();
-                a[i] = rnd.Next(1, 100);
-                Console.Write(a[i] + " ");
-            }*/
             Console.ReadLine();
         }
         
