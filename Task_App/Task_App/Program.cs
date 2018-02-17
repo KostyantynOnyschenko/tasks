@@ -24,6 +24,10 @@ namespace Task_App
             Eleven();
         }
 
+        /// <summary>
+        /// <para>Написать функцию is_prime, принимающую 1 аргумент — число от 0 до 1000, и возвращающую True, если оно простое, и False - иначе.</para>>
+        /// </summary>
+
         public static void First()
         {
             Console.WriteLine("task number 1: ");
@@ -48,6 +52,10 @@ namespace Task_App
             }
             Console.ReadKey();
         }
+
+        /// <summary>
+        /// <para>Даны три числа. Найдите наибольшее число из них.</para>>
+        /// </summary>
 
         public static void Two()
         {
@@ -99,6 +107,10 @@ namespace Task_App
             }
         }
 
+        /// <summary>
+        /// <para>Даны три числа. Найдите те два из них, сумма которых наибольшая.</para>>
+        /// </summary>
+
         public static void Three()
         {
             Console.WriteLine("task number three: ");
@@ -120,6 +132,11 @@ namespace Task_App
                 Console.WriteLine("big sum: a + c:" + w);
             }
         }
+
+        /// <summary>
+        /// <para>Пользователь вводит четыре числа. Найдите наибольшее четное число среди них.</para>>
+        /// <para>Если оно не существует, выведите фразу "not found"</para>>
+        /// </summary>
 
         public static void Four()
         {
@@ -183,6 +200,10 @@ namespace Task_App
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// <para>Даны три числа. Написать "yes", если среди них есть одинаковые.</para>>
+        /// </summary>
+
         public static void Five()
         {
             Console.WriteLine();
@@ -199,6 +220,10 @@ namespace Task_App
                 Console.WriteLine("yes");
             }
         }
+
+        /// <summary>
+        /// <para>Дано четырехзначное число. Определите, есть ли одинаковые цифры в нем</para>>
+        /// </summary>
 
         public static void Seven()
         {
@@ -304,6 +329,10 @@ namespace Task_App
             }
         }
 
+        /// <summary>
+        /// <para>Выведите на экран числа 1, 2, 3, 4, ..., 20.</para>>
+        /// </summary>
+
         public static void Eight()
         {
             Console.WriteLine("task number 8: ");
@@ -312,6 +341,9 @@ namespace Task_App
                 Console.Write(i + " ");
             }
         }
+        /// <summary>
+        /// <para>Вывести на экран ряд чисел 1001,  1004,  1007,  ... 1025.</para>>
+        /// </summary>
 
         public static void Nine()
         {
@@ -323,6 +355,10 @@ namespace Task_App
             }
         }
 
+        /// <summary>
+        /// <para>Вывести на экран числа 100, 96, 92, ... до последнего положительного включительно</para>>
+        /// </summary>
+
         public static void Ten()
         {
             Console.WriteLine();
@@ -332,6 +368,10 @@ namespace Task_App
                 Console.Write(i + " ");
             }
         }
+
+        /// <summary>
+        /// <para>Вывести 3 случайных числа от 0 до 100 без повторений.</para>>
+        /// </summary>
 
         public static void Eleven()
         {
