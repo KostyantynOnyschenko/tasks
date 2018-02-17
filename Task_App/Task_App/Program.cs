@@ -14,6 +14,7 @@ namespace Task_App
             First();
             Two();
             Three();
+            Four();
             Five();
             Seven();
             Seven_VersionTwo();
@@ -136,6 +137,53 @@ namespace Task_App
             int three = int.Parse(Console.ReadLine());
             Console.WriteLine("введите четвертое число: ");
             int four = int.Parse(Console.ReadLine());
+            Console.WriteLine("вы ввели: " + one + ", " + two + ", " + three + ", " + four);
+            if (one % 2 == 0)
+            {
+                Console.WriteLine("число четное: " + one);              
+            }
+            else
+            {
+                Console.WriteLine("число нечетное: " + one);
+            }
+            if (two % 2 == 0)
+            {
+                Console.WriteLine("число четное: " + two);
+            }
+            else
+            {
+                Console.WriteLine("число нечетное: " + two);
+            }
+            if (three % 2 == 0)
+            {
+                Console.WriteLine("число четное: " + three);
+            }
+            else
+            {
+                Console.WriteLine("число нечетное: " + three);
+            }
+            if (four % 2 == 0)
+            {
+                Console.WriteLine("число четное: " + four);
+            }
+            else
+            {
+                Console.WriteLine("число нечетное: " + four);
+            }            
+            Console.WriteLine("поиск наибольшего четного числа: ");
+            int one_1 = one;
+            int two_1 = two;
+            int three_1 = three;
+            int four_1 = four;
+            if (one_1 == two_1 || one_1 == three_1 || one_1 == four_1)
+            {
+                Console.WriteLine("нет наибольшего");
+            }
+            else
+            {
+                Console.WriteLine("Наибольшее четное: " + Math.Max(one_1, Math.Max(two_1, Math.Max(three_1, four_1))));
+            }
+            
 
             Console.ReadKey();
         }
