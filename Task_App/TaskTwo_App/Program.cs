@@ -10,8 +10,28 @@ namespace TaskTwo_App
     {
         static void Main(string[] args)
         {
+            One();
             Two();
             Three();
+        }
+
+        /// <summary>
+        /// <para>Напишите программу, которая позволяет пользователю ввести в консоли латинскую букву нижнего регистра, </para>
+        /// <para> переводит её в верхний регистр и результат выводит в консоль.</para>
+        /// </summary>
+        public static void One()
+        {
+            Console.WriteLine("-------------------------task number 1:");
+            Console.WriteLine("write litera: ");
+            char s = Char.Parse(Console.ReadLine());
+            string q = s.ToString();
+            Console.WriteLine("litera: " + q.ToLower());
+            string w;
+            w = s.ToString();
+            Console.WriteLine("result: " + w.ToUpper());
+            Console.ReadKey();
+            Console.ReadLine();
+
         }
 
         /// <summary>
