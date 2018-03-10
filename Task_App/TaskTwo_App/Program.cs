@@ -14,6 +14,7 @@ namespace TaskTwo_App
             Two();
             Three();
             Four();
+            Five();
         }
 
         /// <summary>
@@ -112,6 +113,62 @@ namespace TaskTwo_App
                 Console.WriteLine("no equal");
             }
             Console.ReadKey();            
+        }
+
+        /// <summary>
+        /// <para>В зависимости от выбора пользователя вычислить</para>
+        /// <para>площадь круга, прямоугольника или треугольника.  </para>
+        /// <para>Для вычисления площади каждой фигуры должна быть написана отдельная функция.</para>
+        /// </summary>
+        public static void Five()
+        {
+            Console.WriteLine("-------------------------task number 5: ");
+            Console.WriteLine("выберите какую площадь вычислить: ");
+            Console.WriteLine("1 - треугольника");
+            Console.WriteLine("2 - прямоугольника");
+            Console.WriteLine("3 - круга");
+            int i = Int32.Parse(Console.ReadLine());
+            switch (i)
+            {
+                case 1:
+                    Console.WriteLine("вы выбрали площадь треугольника");
+                    Console.WriteLine("формула: ");
+                    Console.WriteLine("S = 0.5*a*h");
+                    Console.WriteLine("введите a: ");
+                    double a = double.Parse(Console.ReadLine());
+                    Console.WriteLine("введите h: ");
+                    double h = double.Parse(Console.ReadLine());
+                    Console.Write("S треугольника = ");
+                    double S = 0.5 * a * h;
+                    Console.Write(S);
+                    break;
+                case 2:
+                    Console.WriteLine("вы выбрали площадь прямоугольника");
+                    Console.WriteLine("формула: ");
+                    Console.WriteLine("S = a * b");
+                    Console.WriteLine("введите a: ");
+                    double ap = double.Parse(Console.ReadLine());
+                    Console.WriteLine("введите b: ");
+                    double b = double.Parse(Console.ReadLine());
+                    Console.Write("S прямогульника = ");
+                    double Sp = ap * b;
+                    Console.Write(Sp);
+                    break;
+                case 3:
+                    Console.WriteLine("вы выбрали площадь круга");
+                    Console.WriteLine("формула: ");
+                    Console.WriteLine("S = pi * r2");
+                    Console.WriteLine("введите r: ");
+                    double r = double.Parse(Console.ReadLine());
+                    Console.Write("S круга = ");
+                    double Sc = Math.PI * Math.Pow(r, 2);
+                    Console.Write(Sc);
+                    break;
+                default:
+                    Console.WriteLine("такой фигуры нет");
+                    break;
+            }
+            Console.ReadKey();
         }
 
 
