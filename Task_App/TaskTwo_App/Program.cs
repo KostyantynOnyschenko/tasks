@@ -97,6 +97,7 @@ namespace TaskTwo_App
             Console.WriteLine("write third digital: ");
             int z = Int32.Parse(Console.ReadLine());
             Console.WriteLine("search equal digital: ");
+            //проверка на наличие хотя бы двух равных чисел
             if (x == y || y == z || x == z)
             {
                 x += 5;
