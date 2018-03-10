@@ -25,9 +25,11 @@ namespace TaskTwo_App
             Console.WriteLine("write litera: ");
             char s = Char.Parse(Console.ReadLine());
             string q = s.ToString();
+            //вписанная пользователем буква в любом случае перейдет в нижний регистр по условию
             Console.WriteLine("litera: " + q.ToLower());
             string w;
             w = s.ToString();
+            //результат с верхним регистром
             Console.WriteLine("result: " + w.ToUpper());
             Console.ReadKey();
             Console.ReadLine();
