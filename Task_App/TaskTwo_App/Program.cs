@@ -13,6 +13,7 @@ namespace TaskTwo_App
             One();
             Two();
             Three();
+            Four();
         }
 
         /// <summary>
@@ -78,7 +79,40 @@ namespace TaskTwo_App
                 Console.WriteLine("this diital equal");
             }
             Console.ReadKey();
+            Console.ReadLine();
         }
+
+        /// <summary>
+        /// <para>Составить алгоритм увеличения всех трех, введённых с клавиатуры</para>
+        /// <para>переменных на 5,если среди них есть хотя бы две равные.  </para>
+        /// <para>В противном случае выдать ответ </para>
+        /// </summary>
+        public static void Four()
+        {
+            Console.WriteLine("-------------------------task number 4: ");
+            Console.WriteLine("write first digital: ");
+            int x = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("write second digital: ");
+            int y = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("write third digital: ");
+            int z = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("search equal digital: ");
+            if (x == y || y == z || x == z)
+            {
+                x += 5;
+                y += 5;
+                z += 5;
+                Console.WriteLine("x after search: " + x);
+                Console.WriteLine("y after search: " + y);
+                Console.WriteLine("z after search: " + z);
+            }
+            else
+            {
+                Console.WriteLine("no equal");
+            }
+            Console.ReadKey();            
+        }
+
 
     }
 }
