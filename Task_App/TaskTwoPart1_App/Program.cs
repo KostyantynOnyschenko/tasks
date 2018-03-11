@@ -10,6 +10,8 @@ namespace TaskTwoPart1_App
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("part 2");
+            Console.ReadLine();
         }
     }
 }
