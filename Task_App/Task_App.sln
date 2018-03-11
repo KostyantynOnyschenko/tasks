@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_App", "Task_App\Task_A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTwo_App", "TaskTwo_App\TaskTwo_App.csproj", "{0400CCE0-02AE-456C-BD83-3445ED01621B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTwoPart1_App", "TaskTwoPart1_App\TaskTwoPart1_App.csproj", "{EDB2BFDA-7F43-429A-8454-58713EAF3898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2_App", "TaskTwoPart1_App\Part2_App.csproj", "{EDB2BFDA-7F43-429A-8454-58713EAF3898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
