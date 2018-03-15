@@ -11,12 +11,13 @@ namespace TaskTwoPart1_App
         static void Main(string[] args)
         {
             One();
+            Seven();
         }
 
         /// <summary>
         /// <para>Вычислить значение выражения по формуле (1-tg x)^(ctg x)+ cos(x-y).</para>
         /// </summary>
-        public static void One()
+        private static void One()
         {
             Console.WriteLine("-------------------------task number 1: ");
             Console.WriteLine("введите x: ");
@@ -32,13 +33,46 @@ namespace TaskTwoPart1_App
         }
 
         /// <summary>
+        /// <para>Составить программу, которая на входе должна получать последовательность цифр</para>
+        /// <para>после чего  программа показывает цифру, порядковый номер которой ввел пользователь.</para>
+        /// </summary>
+        private static void Two()
+        {
+            Console.WriteLine("-------------------------task number 2: ");
+            Console.WriteLine("введите число: ");
+            int numuser = int.Parse(Console.ReadLine());
+            
+            Console.ReadKey();
+        }
+
+
+        /// <summary>
         /// <para>Программа проверяет, является ли введенное с клавиатуры число — целым числом.</para>
         /// </summary>
-        public static void Six()
+        private static void Six()
         {
             Console.WriteLine("-------------------------task number 6: ");
             Console.WriteLine("введите число: ");
 
         }
+
+        /// <summary>
+        /// <para>Составить программу, которая будет требовать ввод цифр с клавиатуры до тех пор</para>
+        /// <para> пока не будет введена цифра 1.</para>
+        /// </summary>
+        private static void Seven()
+        {
+            Console.WriteLine("-------------------------task number 7: ");
+            Console.WriteLine("введите число: ");
+            for (;;)
+            {
+                int usnum = int.Parse(Console.ReadLine());
+                if (usnum == 1) break;
+                
+            }
+            Console.WriteLine("условие задачи выполнено");
+            Console.ReadKey();        
+        }
+
     }
 }
