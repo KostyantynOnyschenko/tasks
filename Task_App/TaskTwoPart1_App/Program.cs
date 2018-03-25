@@ -45,6 +45,21 @@ namespace TaskTwoPart1_App
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// <para>Разработать функцию, в которую передаются в качестве аргументов массив типа float</para>
+        /// <para>и его размер. Функция должна возвращать среднее арифметическое элементов массива.</para>
+        /// </summary>
+        private static void Five()
+        {
+            Console.WriteLine("-------------------------task number 5: ");
+            float[] arr = new float[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                float aver = arr[i];
+                
+            }
+        }
+
 
         /// <summary>
         /// <para>Программа проверяет, является ли введенное с клавиатуры число — целым числом.</para>
