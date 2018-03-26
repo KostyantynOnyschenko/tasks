@@ -11,6 +11,7 @@ namespace Part2_2
         static void Main(string[] args)
         {
             Two();
+            Eight();
         }
 
         /// <summary>
@@ -31,6 +32,40 @@ namespace Part2_2
             Console.WriteLine();
             Console.WriteLine("max: " + max + " min: " + min);
             Console.ReadLine();
+        }
+
+        /// <summary>
+        /// <para>Обменять значения двух переменных, используя третью (буферную) переменную</para>
+        /// </summary>
+        private static void Three()
+        {
+            Console.WriteLine("-------------------------task number 3: ");
+            int a = 2;
+            int b = 5;
+            int c;
+            Console.WriteLine("a = " + a + " b = " + b);
+            c = a;
+            b = c;
+            c = b;
+            a = c;
+            Console.WriteLine("b = " + b + " a = " + a);
+            Console.ReadLine();
+        }
+
+        /// <summary>
+        /// <para>Написать функцию, которая возвращает среднее арифметическое 
+        /// двух переданных ей аргументов (параметров).</para>
+        /// </summary>
+        private static void Eight()
+        {
+            Console.WriteLine("-------------------------task number 8: ");
+            double a = Double.Parse(Console.ReadLine());
+            double b = Double.Parse(Console.ReadLine());
+            double c;
+            //c = a + b / 2;
+           
+            Console.WriteLine("среднее арифметическое: " + c);
+            Console.ReadKey();
         }
 
 
