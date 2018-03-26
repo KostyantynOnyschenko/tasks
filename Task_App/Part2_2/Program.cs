@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MathNet;
 
 namespace Part2_2
 {
@@ -63,8 +64,7 @@ namespace Part2_2
             double b = Double.Parse(Console.ReadLine());
             double c;
             //c = a + b / 2;
-           
-            Console.WriteLine("среднее арифметическое: " + c);
+            //Console.WriteLine("среднее арифметическое: " + c);
             Console.ReadKey();
         }
 
