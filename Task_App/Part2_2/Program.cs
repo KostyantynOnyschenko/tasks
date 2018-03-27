@@ -11,9 +11,8 @@ namespace Part2_2
     {
         static void Main(string[] args)
         {
-            One();
-            //Two();
-            //Eight();
+            Two();
+            Eight();
         }
 
         /// <summary>
@@ -57,7 +56,6 @@ namespace Part2_2
             }
             Console.WriteLine();
             Console.WriteLine("max: " + max + " min: " + min);
-            Console.ReadLine();
         }
 
         /// <summary>
