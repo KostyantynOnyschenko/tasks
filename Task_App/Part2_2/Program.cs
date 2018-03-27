@@ -11,9 +11,34 @@ namespace Part2_2
     {
         static void Main(string[] args)
         {
-            Two();
-            Eight();
+            One();
+            //Two();
+            //Eight();
         }
+
+        /// <summary>
+        /// <para>Все элементы массива поделить на значение наибольшего элемента этого массива.</para>
+        /// </summary>
+        private static void One()
+        {
+            Console.WriteLine("-------------------------task number 1: ");
+            int[] arr = { 1, 5, 6, 4, 9, 21, 12, 9, 45, 47, 46, 79, 23 };
+            int min, max;
+            min = max = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+                if (arr[i] > max) max = arr[i];
+                if (arr[i] < min) min = arr[i];
+                double result = arr[i] / max;
+                Console.WriteLine();
+                Console.WriteLine(result);
+            }
+            Console.WriteLine("max: " + max + " min: " + min);
+
+            Console.ReadLine();
+        }
+
 
         /// <summary>
         /// <para>В массиве найти минимальный и максимальный элементы, поменять их местами.</para>
@@ -54,17 +79,35 @@ namespace Part2_2
         }
 
         /// <summary>
+        /// <para>Дан одномерный массив. Найти среднее арифметическое его элементов. 
+        /// Вывести на экран только те элементы массива, 
+        /// которые больше найденного среднего арифметического.</para>
+        /// </summary>
+        private static void Seven()
+        {
+            Console.WriteLine("-------------------------task number 7: ");
+            int[] arr = { 1, 5, 6, 4, 9, 21, 12, 9, 5, 47, 46, 79, 23 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                
+            }
+            Console.ReadLine();
+        }
+
+
+        /// <summary>
         /// <para>Написать функцию, которая возвращает среднее арифметическое 
         /// двух переданных ей аргументов (параметров).</para>
         /// </summary>
         private static void Eight()
         {
             Console.WriteLine("-------------------------task number 8: ");
-            double a = Double.Parse(Console.ReadLine());
-            double b = Double.Parse(Console.ReadLine());
-            double c;
-            //c = a + b / 2;
-            //Console.WriteLine("среднее арифметическое: " + c);
+            Console.WriteLine("введите первое число: ");
+            double x = Double.Parse(Console.ReadLine());
+            Console.WriteLine("введите второе число: ");
+            double y = Double.Parse(Console.ReadLine());
+            double c = (x + y) / 2;
+            Console.WriteLine("среднее арифметическое: " + c);
             Console.ReadKey();
         }
 
