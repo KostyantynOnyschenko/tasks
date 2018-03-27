@@ -12,6 +12,7 @@ namespace Part2_2
         static void Main(string[] args)
         {
             Two();
+            Three();
             Eight();
         }
 
@@ -29,12 +30,10 @@ namespace Part2_2
                 Console.Write(arr[i] + " ");
                 if (arr[i] > max) max = arr[i];
                 if (arr[i] < min) min = arr[i];
-                double result = arr[i] / max;
-                Console.WriteLine();
-                Console.WriteLine(result);
             }
             Console.WriteLine("max: " + max + " min: " + min);
-
+            Console.WriteLine();
+            Console.WriteLine(max/arr.Length);
             Console.ReadLine();
         }
 
@@ -59,11 +58,32 @@ namespace Part2_2
         }
 
         /// <summary>
-        /// <para>Обменять значения двух переменных, используя третью (буферную) переменную</para>
+        /// <para>В массиве найти минимальный и максимальный элементы. Вычислить их разность.</para>
         /// </summary>
         private static void Three()
         {
             Console.WriteLine("-------------------------task number 3: ");
+            int[] arr = { 1, 5, 6, 4, 9, 21, 12, 9, 45, 47, 46, 79, 23 };
+            int min, max, res;
+            min = max = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+                if (arr[i] < max) min = arr[i];
+                if (arr[i] > min) max = arr[i];
+            }
+            Console.WriteLine("min: " + min + " max: " + max);
+            Console.WriteLine("разность min max: ");
+            Console.WriteLine(max - min);
+            Console.ReadLine();
+        }
+
+        /// <summary>
+        /// <para>Обменять значения двух переменных, используя третью (буферную) переменную</para>
+        /// </summary>
+        private static void Four()
+        {
+            Console.WriteLine("-------------------------task number 4: ");
             int a = 2;
             int b = 5;
             int c;
